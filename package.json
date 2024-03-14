@@ -1,0 +1,85 @@
+{
+  "name": "react-starterkit-app",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "/react-app-starterkit/#",
+  "dependencies": {
+    "@formio/contrib": "^2.0.0",
+    "@formio/js": "^5.0.0-rc.33",
+    "@formio/react": "^5.3.0-rc.2",
+    "@mantine/carousel": "^7.6.2",
+    "@mantine/charts": "^7.6.2",
+    "@mantine/code-highlight": "^7.6.2",
+    "@mantine/core": "^7.6.2",
+    "@mantine/dates": "^7.6.2",
+    "@mantine/dropzone": "^7.6.2",
+    "@mantine/form": "^7.6.2",
+    "@mantine/hooks": "^7.6.2",
+    "@mantine/modals": "^7.6.2",
+    "@mantine/notifications": "^7.6.2",
+    "@mantine/nprogress": "^7.6.2",
+    "@mantine/spotlight": "^7.6.2",
+    "@mantine/tiptap": "^7.6.2",
+    "@reduxjs/toolkit": "^2.2.1",
+    "@tabler/icons-react": "^3.0.2",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.2.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@tiptap/extension-link": "^2.2.4",
+    "@tiptap/react": "^2.2.4",
+    "@tiptap/starter-kit": "^2.2.4",
+    "@tsed/react-formio": "^2.2.3",
+    "axios": "^1.6.7",
+    "bootstrap": "^5.2.0",
+    "choices.js": "^10.2.0",
+    "dayjs": "^1.11.10",
+    "embla-carousel-react": "^8.0.0",
+    "formiojs": "^4.18.2",
+    "react": "^18.1.0",
+    "react-bootstrap": "^2.4.0",
+    "react-code-blocks": "0.0.9-0",
+    "react-dom": "^18.1.0",
+    "react-json-view": "^1.21.3",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "5.0.1",
+    "react-table": "^7.8.0",
+    "recharts": "^2.12.2",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "deploy": "yarn build; cd build; git init; git remote add origin git@github.com:formio/react-app-starterkit.git; git checkout -b gh-pages; git add -A; git commit -m 'Update demo application'; git push -f origin gh-pages;",
+    "prepare": "husky install"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest",
+      "prettier"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^8.8.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.1",
+    "prettier": "^2.8.8"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  }
+}
